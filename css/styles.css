@@ -1160,7 +1160,8 @@ form .form-group {
 }
 
 .characteristics .container {
-  
+  flex-direction: column;
+  gap:10px;
 }
 
 
@@ -1193,7 +1194,8 @@ form .form-group {
   }
 
   .characteristics .container {
-   
+      flex-direction: row;
+      gap:30px;
   }
  
 
