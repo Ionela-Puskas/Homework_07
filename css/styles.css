@@ -1149,10 +1149,32 @@ form .form-group {
   align-self: self-end;
 }
 
+.mobile-menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.mobile-menu-links.link social-link svg{
+  width: 20px;
+  height:20px;
+}
+
+.mobile-menu-links.link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--icons-background);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+}
+
 .nav-links.header-contact {
   display: none;
 }
-
 
 .icon-list {
   display:none;
