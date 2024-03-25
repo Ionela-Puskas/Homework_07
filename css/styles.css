@@ -463,11 +463,10 @@ color: var(--links-color);
 
 
 
-.section-4 {
-width:1128px;
-height: 200px;
-margin-top:2568px;
-margin-left:156;
+.section-4.container {
+width:1200px;
+margin-top: 0px;
+
 }
 
 .section-4 .titlu-4 {
@@ -1128,11 +1127,11 @@ form .form-group {
   position: relative;
 }
 
-.js-menu-container {
+.js-menu.container {
   display: none;
 }
 
-.js-menu-container.is-open {
+.js-menu.container.is-open {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -1160,6 +1159,29 @@ form .form-group {
 }
 
 .characteristics .container {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.what-we-do.container {
+  display: none;
+}
+
+.team-members.container {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.section-4.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.page-footer.container {
+  display: flex;
   flex-direction: column;
   gap:10px;
 }
@@ -1194,10 +1216,32 @@ form .form-group {
   }
 
   .characteristics .container {
-      flex-direction: row;
+    display: flex;
+      flex-wrap: wrap;
       gap:30px;
   }
  
+  .what-we-do.container {
+    display: none;
+  }
+
+.team-members.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+}
+
+.section-4.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+}
+
+.page-footer.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+}
 
 }
 
@@ -1234,6 +1278,4 @@ form .form-group {
     display: flex;
     gap:22px;
   }
-
-
 }
