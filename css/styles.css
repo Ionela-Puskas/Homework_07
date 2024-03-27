@@ -1054,162 +1054,164 @@ gap:23px;
   color:var(--icons-color--hover);
 }
 
-.burger-menu {
-  color: #000000;
-  position: absolute;
-  top: 48px;
-  right: 31px;
+/*Stilizare mobile pentru ecrane intre 428px and 767px*/
+@media screen and (min-width:428px) and (max-width:767px) {
+  .burger-menu {
+    color: #000000;
+    position: absolute;
+    top: 48px;
+    right: 31px;
+  }
+  
+  .mobile-logo {
+    position: absolute;
+    top: 40px;
+    left: 31px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    margin-top: 44px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  form .label-text {
+    color: white;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    transition: top var(--transition);
+  }
+  
+  form .input::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+  
+  form .input {
+    appearance: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    width: 100%;
+    color: rgba(157, 164, 189, 0.4);
+    padding: 8px 0;
+    transition: border var(--transition), color var(--transition);
+  }
+  
+  form .input:placeholder-shown ~ .label-text {
+    display: none;
+    top: 0;
+  }
+  
+  form .input:focus {
+    color: white;
+    border-color: white;
+  }
+  
+  form .input:focus::placeholder {
+    color: white;
+  }
+  
+  form .form-group {
+    flex: 1;
+    position: relative;
+  }
+  
+  .js-menu.container {
+    display: none;
+  }
+  
+  .js-menu.container.is-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    padding: 40px 31px;
+    height: 100%;
+  }
+  
+  .js-close-menu {
+    border: none;
+    background: none;
+    align-self: self-end;
+  }
+  
+  .mobile-menu-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .mobile-menu-links.link social-link svg{
+    width: 20px;
+    height:20px;
+  }
+  
+  .mobile-menu-links.link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--icons-background);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons-color);
+  }
+  
+  .nav-links.header-contact {
+    display: none;
+  }
+  
+  .icon-list {
+    display:none;
+  }
+  
+  .characteristics .container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  .what-we-do.container {
+    display: none;
+  }
+  
+  .team-members.container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  .section-4.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+  }
+  
+  .page-footer.container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
 }
 
-.mobile-logo {
-  position: absolute;
-  top: 40px;
-  left: 31px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-  margin-top: 44px;
-}
-
-.form-row {
-  display: flex;
-  gap: 30px;
-}
-
-form .label-text {
-  color: white;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-  position: absolute;
-  top: -8px;
-  left: 0;
-  transition: top var(--transition);
-}
-
-form .input::placeholder {
-  color: rgba(157, 164, 189, 0.4);
-  font-size: 11px;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-}
-
-form .input {
-  appearance: none;
-  outline: none;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  width: 100%;
-  color: rgba(157, 164, 189, 0.4);
-  padding: 8px 0;
-  transition: border var(--transition), color var(--transition);
-}
-
-form .input:placeholder-shown ~ .label-text {
-  display: none;
-  top: 0;
-}
-
-form .input:focus {
-  color: white;
-  border-color: white;
-}
-
-form .input:focus::placeholder {
-  color: white;
-}
-
-form .form-group {
-  flex: 1;
-  position: relative;
-}
-
-.js-menu.container {
-  display: none;
-}
-
-.js-menu.container.is-open {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: white;
-  z-index: 1;
-  padding: 40px 31px;
-  height: 100%;
-}
-
-.js-close-menu {
-  border: none;
-  background: none;
-  align-self: self-end;
-}
-
-.mobile-menu-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.mobile-menu-links.link social-link svg{
-  width: 20px;
-  height:20px;
-}
-
-.mobile-menu-links.link {
-  width: 44px;
-  height: 44px;
-  background-color: var(--icons-background);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--icons-color);
-}
-
-.nav-links.header-contact {
-  display: none;
-}
-
-.icon-list {
-  display:none;
-}
-
-.characteristics .container {
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-}
-
-.what-we-do.container {
-  display: none;
-}
-
-.team-members.container {
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-}
-
-.section-4.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap:10px;
-}
-
-.page-footer.container {
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-}
-
-
- /* Stilizare tableta si device-uri peste 768px*/
+ /* Stilizare tableta si device-uri intre 768px and 1158px*/
 @media screen and (min-width:768px) {
   .nav-links {
     letter-spacing: 0.02em;
@@ -1264,12 +1266,10 @@ form .form-group {
   flex-wrap: wrap;
   gap:30px;
 }
-
 }
 
-
-/*Stilizare desktop si device-uri peste 1200px*/
-@media screen and (min-width: 1200px) {
+/*Stilizare desktop si device-uri peste 1158px*/
+@media screen and (min-width: 1158px) {
   .nav-links {
     letter-spacing: 0.02em;
     color: var(--links-color);
