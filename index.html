@@ -12,31 +12,87 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <a class="js-open-menu">
+        <i data-feather="menu" class="burger-menu"></i>
+        </a>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+      </svg>
+      </button>
+      <div class="mobile-menu-navigation">
+      <ul>
+         <li> <a href="./index.html" class="sctiv">Studio</a></li>
+      <li><a href="./portfolio.html" class="undecorate-text">Portofolio</a></li>
+     <li><a href="" class="undecorate-text">Contacts</a></li>
+     </ul>
+
+        <a href="mailto:info@devstudio.com" class="mail undecorate-text">info@devstudio.com</a>
+        <a href="tel:+12127724150" class="phone undecorate-text">+1 212-772-4150</a>
+     
+    <div class="mobile-menu-links">
+      <a
+        class="link social-link"
+        href="https://instagram.com"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
+      <svg>
+        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+      </svg>
+      </a>
+      <a
+        class="link social-link"
+        href="https://twitter.com"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
+      <svg>
+        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+      </svg>
+      </a>
+      <a 
+      class="link social-link"
+      href="https://facebook.com"
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      >
+      <svg>
+        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+      </svg>
+    </a>
+    <a 
+    class="link social-link"
+    href="https://linkedin.com"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    >
+    <svg>
+      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+    </svg>
+  </a>
+    </div>
+  </div>
+  <div class="container header-container">
+    <a class="js-open-menu">
+      <i data-feather="menu" class="burger-menu"></i>
+    </a>
+  <!--Header section-->
     <header class="page-header">
         <div class="container">
           <a href="./index.html" class="logo-anchor undecorate-text"><span>Web</span>Studio</a>
-          </div>
           <nav >
-            <div class="js-menu">
-              <button class="menu-toggle js-close-menu">
-                <a class="js-open-menu">
-                <i data-feather="menu" class="burger-menu"></i>
-                </a>
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-              </svg>
-              </button>
-              <nav>
           <ul class="nav-links unstyle-list">
               <li class="nav-links-item">
                 <a href="./index.html" class="sctiv">Studio</a>
@@ -54,50 +110,10 @@
                 <a href="tel:+12127724150" class="phone undecorate-text">+1 212-772-4150</a>
               </li>
             </ul>
-            <div class="mobile-menu-links">
-              <a
-                class="link social-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-              <svg>
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-              </a>
-              <a
-                class="link social-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-              <svg>
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-              </a>
-              <a 
-              class="link social-link"
-              href="https://facebook.com"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >
-              <svg>
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a 
-            class="link social-link"
-            href="https://linkedin.com"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            >
-            <svg>
-              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-            </div>
           </nav>
+        </div>
       </header>
+      <!--Hero section-->
       <main>
         <section class="hero-section section">
           <div class="container">
