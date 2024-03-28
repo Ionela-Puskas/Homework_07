@@ -1130,7 +1130,7 @@ gap:23px;
   }
   
   .js-menu-container {
-    display: none;
+    display: flex;
   }
   
   .js-menu-container.is-open {
@@ -1174,41 +1174,40 @@ gap:23px;
     color: var(--icons-color);
   }
   
-  .nav-links.header-contact {
-    display: none;
-  }
-  
-  .icon-list {
+  .nav-links {
     display:none;
   }
   
-  .characteristics .container {
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-  }
-  
-  .what-we-do.container {
-    display: none;
-  }
-  
-  .team-members.container {
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-  }
-  
-  .section-4.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap:10px;
-  }
-  
-  .page-footer.container {
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-  }
+.header-contact {
+  display:none;
+}
+ 
+.icon-list {
+  display: none;
+}
+
+.characteristics ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.what-we-do .container {
+  display: none;
+}
+
+.team-members.container {
+  flex-wrap: wrap;
+}
+
+.our-team {
+flex-direction: column;
+}
+
+.icons-listlogo {
+  flex-wrap: wrap;
+}
+
+
 
  /* Stilizare tableta si device-uri peste 768px*/
 @media screen and (min-width:768px) {
@@ -1217,13 +1216,13 @@ gap:23px;
     color: var(--links-color);
     font-weight: 500;
     display: flex;
-    gap: 37px;
+    gap: 27px;
   }
   
   .header-contact {
     margin-left: auto;
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
 
   .mail,
@@ -1234,36 +1233,36 @@ gap:23px;
     color: var(--text-color);
   }
 
-  .burger-menu {
-    display: none;
-  }
+ .js-menu-container {
+  display: none;
+ }
 
+ .icon-list {
+  display: none;
+}
 
-  .characteristics .container {
-    display: flex;
-      flex-wrap: wrap;
-      gap:30px;
-  }
- 
-  .what-we-do.container {
-    display: none;
-  }
+.characteristics ul {
+ display: flex;
+ flex-wrap: nowrap;
+ gap:12px;
+}
+
+.what-we-do .container {
+  display: none;
+}
 
 .team-members.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap:30px;
+  flex-wrap: nowrap;
 }
 
-.section-4.container {
-  display: flex;
-  flex-wrap: wrap;
- gap:30px;
+.our-team {
+  flex-direction: row;
 }
 
-.page-footer.container {
-  flex-wrap: wrap;
+.icons-listlogo {
+  flex-wrap: nowrap;
 }
+
 }
 
 /*Stilizare desktop si device-uri peste 1158px*/
@@ -1290,12 +1289,42 @@ gap:23px;
     color: var(--text-color);
   }
 
-  .burger-menu {
-    display: none;
+ .js-menu-container {
+  display:none;
+ }
+
+ .characteristics ul {
+  display: flex;
+  gap:22px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top:20px;
   }
 
-  .characteristics .container {
-    display: flex;
-    
+  .what-we-do .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
+
+  .team-members .container {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .our-team {
+    display: flex;
+    gap: 23px;
+  }
+
+  .section-4.container {
+    width:1200px;
+    margin-top: 0px;
+    }
+
 }
