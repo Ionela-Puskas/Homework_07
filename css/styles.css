@@ -1130,7 +1130,7 @@ gap:23px;
   }
   
   .js-menu-container {
-    display: flex;
+    display: none;
   }
   
   .js-menu-container.is-open {
