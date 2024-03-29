@@ -1116,12 +1116,12 @@ gap:23px;
   }
   
   form .input:focus {
-    color: white;
+    color: #000000;
     border-color: white;
   }
   
   form .input:focus::placeholder {
-    color: white;
+    color: #000000;
   }
   
   form .form-group {
