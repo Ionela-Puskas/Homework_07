@@ -1063,12 +1063,6 @@ gap:23px;
     right: 31px;
   }
   
-  .mobile-logo {
-    position: absolute;
-    top: 40px;
-    left: 31px;
-  }
-  
   form {
     display: flex;
     flex-direction: column;
@@ -1116,12 +1110,12 @@ gap:23px;
   }
   
   form .input:focus {
-    color: #000000;
+    color: white;
     border-color: white;
   }
   
   form .input:focus::placeholder {
-    color: #000000;
+    color: white;
   }
   
   form .form-group {
